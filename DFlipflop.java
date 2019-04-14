@@ -113,6 +113,10 @@ public class DFlipflop implements ActionListener {
             f1.dispose();
             new ThanksFrame();
         }
+        if(e.getSource() == b5){
+            f1.dispose();
+            new TD();
+        }
     }
     public static void main (String[]args){
         new DFlipflop();

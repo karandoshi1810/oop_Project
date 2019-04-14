@@ -112,10 +112,10 @@ public class SRFlipflop implements ActionListener {
     public void actionPerformed(ActionEvent e) {
 
             if (e.getSource() == b2) {
-                if ((t1.getText().equals("1"))||(t1.getText().equals("0")) && (t2.getText().equals("0")) && t3.getText().equals("1")||(t3.getText().equals("0"))) {
+                if ((t1.getText().equals("1")) && (t2.getText().equals("0")) && t3.getText().equals("1")) {
                     t4.setText("No change");
                     t5.setText("No change");
-                } else if ((t1.getText().equals("0")) || (t1.getText().equals("0")) && (t2.getText().equals("1")) && (t3.getText().equals("0")) || (t3.getText().equals("1"))) {
+                } else if ((t1.getText().equals("0"))&& (t2.getText().equals("1")) && (t3.getText().equals("0")) ) {
                     t4.setText("No change");
                     t5.setText("No change");
 
@@ -143,6 +143,10 @@ public class SRFlipflop implements ActionListener {
                 f1.dispose();
                 new ThanksFrame();
             }
+        if(e.getSource() == b6){
+            f1.dispose();
+            new TD();
+        }
 
         }
 
