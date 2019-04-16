@@ -29,7 +29,7 @@ public class JKD implements ActionListener {
         b2.addActionListener(this);
         b3.addActionListener(this);
 
-        ImageIcon kd = new ImageIcon("D:\\JAVA_Project\\JKdescription.PNG");
+        ImageIcon kd = new ImageIcon("D:\\oop_Project\\JKdescription.PNG");
         l1 = new JLabel(kd);
         f1.add(b1);
         f1.add(b2);
@@ -37,6 +37,7 @@ public class JKD implements ActionListener {
         f1.add(l1);
         f1.setSize(1500,1500);
         f1.setVisible(true);
+        f1.setLayout(null);
         f1.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
 

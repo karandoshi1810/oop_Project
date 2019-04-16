@@ -1,7 +1,4 @@
 package package1;
-import package1.DD;
-import package1.DFlipflop;
-import package1.SRFlipflop;
 
 import javax.swing.*;
 import java.awt.*;
@@ -45,10 +42,18 @@ public class Choices implements ActionListener {
         b6.setForeground(Color.BLACK);
         b7.setBackground(Color.WHITE);
         b7.setForeground(Color.BLACK);
-        ImageIcon kd = new ImageIcon("D:\\Image.png");
+        ImageIcon kd = new ImageIcon("D:\\oop_Project\\SR flip flop.PNG");
         l1 = new JLabel(kd);
 
-        f1.setLayout(null);
+        b1.addActionListener(this);
+        b2.addActionListener(this);
+        b3.addActionListener(this);
+        b4.addActionListener(this);
+        b5.addActionListener(this);
+        b6.addActionListener(this);
+        b7.addActionListener(this);
+
+
         f1.add(b1);
         f1.add(b2);
         f1.add(b3);
@@ -59,17 +64,12 @@ public class Choices implements ActionListener {
         f1.add(l1);
         f1.setSize(1500, 1500);
         f1.setVisible(true);
+        f1.setLayout(null);
         f1.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
 
 
-        b1.addActionListener(this);
-        b2.addActionListener(this);
-        b3.addActionListener(this);
-        b4.addActionListener(this);
-        b5.addActionListener(this);
-        b6.addActionListener(this);
-        b7.addActionListener(this);
+
 
 
     }

@@ -1,5 +1,4 @@
 package package1;
-import package1.SRFlipflop;
 
 import javax.swing.*;
 import java.awt.*;
@@ -14,11 +13,11 @@ public class MainFrame implements ActionListener {
         f1 = new JFrame("WELCOME TO KARAN DOSHI PROJECT");
         B1 = new JButton("ENTER");
         B2 = new JButton("EXIT");
-        B1.setBounds(260,620,208,65);
+        B1.setBounds(0,540,208,65);
         B1.setBackground(new Color(90,155,213));
-        B2.setBounds(888,621,220,67);
+        B2.setBounds(616,541,220,67);
         B2.setBackground(new Color(237,125,49));
-        ImageIcon manu = new ImageIcon("D:\\Karan-ICT\\JAVA\\ProjectFrontPage-0.png");
+        ImageIcon manu = new ImageIcon("D:\\oop_Project\\ProjectFrontPage-0.png");
         l= new JLabel(manu);
 
         B1.addActionListener(this);
@@ -27,7 +26,7 @@ public class MainFrame implements ActionListener {
         f1.add(B1);
         f1.add(B2);
         f1.add(l);
-        f1.setSize(1500,1500);
+        f1.setSize(850,670);
         f1.setVisible(true);
         f1.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
@@ -50,3 +49,4 @@ public class MainFrame implements ActionListener {
 
     }
 }
+
