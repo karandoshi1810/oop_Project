@@ -1,4 +1,7 @@
 package package1;
+import package1.DD;
+import package1.DFlipflop;
+import package1.SRFlipflop;
 
 import javax.swing.*;
 import java.awt.*;
@@ -28,21 +31,23 @@ public class Choices implements ActionListener {
         b6.setBounds(600, 540, 100, 65);
         b7.setBounds(800, 540, 100, 65);
 
-        b1.setBackground(Color.WHITE);
-        b1.setForeground(Color.BLACK);
-        b2.setBackground(Color.WHITE);
-        b2.setForeground(Color.BLACK);
-        b3.setBackground(Color.WHITE);
-        b3.setForeground(Color.BLACK);
-        b4.setBackground(Color.WHITE);
-        b4.setForeground(Color.BLACK);
-        b5.setBackground(Color.WHITE);
-        b5.setForeground(Color.BLACK);
-        b6.setBackground(Color.WHITE);
-        b6.setForeground(Color.BLACK);
-        b7.setBackground(Color.WHITE);
-        b7.setForeground(Color.BLACK);
-        ImageIcon kd = new ImageIcon("D:\\oop_Project\\SR flip flop.PNG");
+        b1.setBackground(new Color(0,0,0));
+        b1.setForeground(new Color(255,255,255));
+        b2.setBackground(new Color(0,0,0));
+        b2.setForeground(new Color(255,255,255));
+        b3.setBackground(new Color(0,0,0));
+        b3.setForeground(new Color(255,255,255));
+        b4.setBackground(new Color(0,0,0));
+        b4.setForeground(new Color(255,255,255));
+        b5.setBackground(new Color(0,0,0));
+        b5.setForeground(new Color(255,255,255));
+        b6.setBackground(new Color(0,0,0));
+        b6.setForeground(new Color(255,255,255));
+        b7.setBackground(new Color(0,0,0));
+        b7.setForeground(new Color(255,255,255));
+
+
+        ImageIcon kd = new ImageIcon("D:\\Image.png");
         l1 = new JLabel(kd);
 
         b1.addActionListener(this);

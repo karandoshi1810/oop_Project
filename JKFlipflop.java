@@ -11,43 +11,43 @@ public class JKFlipflop implements ActionListener {
     JLabel l1,l2,l3,l4,l5,l6;
     JTextField t1,t2,t3,t4,t5;
     public JKFlipflop(){
-        JFrame f1 = new JFrame("JK flip-flop");
-        JTextField t1 = new JTextField("");
-        JTextField t2 = new JTextField("");
-        JTextField t3 = new JTextField("");
-        JTextField t4 = new JTextField("");
-        JTextField t5 = new JTextField("");
-        JLabel l1 = new JLabel("J");
-        JLabel l2 = new JLabel("CK");
-        JLabel l3 = new JLabel("K");
-        JLabel l4 = new JLabel("Q");
-        JLabel l5 = new JLabel("Q'");
-        JButton b1 = new JButton("Previous");
-        JButton b2 = new JButton("Output");
-        JButton b3 = new JButton("Next");
-        JButton b4 = new JButton("Exit");
-        JButton b5 = new JButton("SR flip-flop");
-        JButton b6 = new JButton("D flip-flop");
-        JButton b7 = new JButton("T flip-flop");
-        JButton b8 = new JButton("Waveform");
+         f1 = new JFrame("JK flip-flop");
+         t1 = new JTextField("");
+         t2 = new JTextField("");
+         t3 = new JTextField("");
+         t4 = new JTextField("");
+         t5 = new JTextField("");
+         l1 = new JLabel("J");
+         l2 = new JLabel("CK");
+         l3 = new JLabel("K");
+         l4 = new JLabel("Q");
+         l5 = new JLabel("Q'");
+         b1 = new JButton("Previous");
+         b2 = new JButton("Output");
+         b3 = new JButton("Next");
+         b4 = new JButton("Exit");
+         b5 = new JButton("SR flip-flop");
+         b6 = new JButton("D flip-flop");
+         b7 = new JButton("T flip-flop");
+         b8 = new JButton("Waveform");
 
-        t1.setBounds(425,200,25,25);
-        t2.setBounds(425,230,25,25);
-        t3.setBounds(425,260,25,25);
-        t4.setBounds(725,200,25,25);
-        t5.setBounds(725,260,25,25);
+        t1.setBounds(325,170,60,60);
+        t2.setBounds(325,440,60,60);
+        t3.setBounds(320,300,60,60);
+        t4.setBounds(955,220,100,50);
+        t5.setBounds(950,400,100,50);
         l1.setBounds(415,82,200,250);
         l2.setBounds(406,110,200,250);
         l3.setBounds(415,142,200,250);
         l4.setBounds(715,90,200,250);
         l5.setBounds(715,144,200,250);
-        b1.setBounds(300,500,100,50);
+        b1.setBounds(300,600,100,50);
         b1.setBackground(Color.PINK);
-        b2.setBounds(500,500,100,50);
+        b2.setBounds(500,600,100,50);
         b2.setBackground(Color.PINK);
-        b3.setBounds(700,500,100,50);
+        b3.setBounds(700,600,100,50);
         b3.setBackground(Color.PINK);
-        b4.setBounds(1000,500,100,50);
+        b4.setBounds(900,600,100,50);
         b4.setBackground(Color.PINK);
         b5.setBounds(1200,150,100,50);
         b5.setBackground(Color.PINK);
@@ -57,7 +57,7 @@ public class JKFlipflop implements ActionListener {
         b7.setBackground(Color.PINK);
         b8.setBounds(1200,450,100,50);
         b8.setBackground(Color.PINK);
-        ImageIcon i1 = new ImageIcon("D:\\oop_Project\\JK_image.PNG");
+        ImageIcon i1 = new ImageIcon("D:\\JAVA_Project\\JK_image.PNG");
         l6 = new JLabel(i1);
 
         b1.addActionListener(this);
@@ -103,15 +103,59 @@ public class JKFlipflop implements ActionListener {
     }
     @Override
     public void actionPerformed (ActionEvent e) {
-   if(e.getSource() == b1){
-       f1.dispose();
-       new DFlipFlop();
-   }
-   if(e.getSource() == b2){
-       if(t1.getText().equals("0") && t2.getText().equals("1")&&t3.getText().equals("0")){
-           t4.setText("NO change");
-           t5.setText("No change");
-       }
-   }
+        if(e.getSource() == b1){
+            f1.dispose();
+            new DFlipflop();
+        }
+        if(e.getSource() == b2){
+            if(t1.getText().equals("0") && t2.getText().equals("1")&&t3.getText().equals("0")){
+                t4.setText("NO change");
+                t4.setBackground(new Color(0,255,128));
+                t5.setText("No change");
+                t5.setBackground(new Color(0,255,128));
+            }
+            else if(t1.getText().equals("1") && t2.getText().equals("1") && t3.getText().equals("0")){
+                t4.setText("1");
+                t4.setBackground(new Color(0,255,128));
+                t5.setText("0");
+                t5.setBackground(new Color(0,255,128));
+            }
+            else if(t1.getText().equals("0") && t2.getText().equals("1") && t3.getText().equals("1")){
+                t4.setText("0");
+                t4.setBackground(new Color(0,255,128));
+                t5.setText("1");
+                t5.setBackground(new Color(0,255,128));
+            }
+            else if(t1.getText().equals("1") && t2.getText().equals("1") && t3.getText().equals("")){
+                t4.setText("Toggle");
+                t4.setBackground(new Color(0,255,128));
+                t5.setText("Toggle");
+                t5.setBackground(new Color(0,255,128));
+            }
+        }
+        if(e.getSource() == b3){
+            f1.dispose();
+            new TD();
+        }
+        if(e.getSource() == b4){
+            f1.dispose();
+            new ThanksFrame();
+        }
+        if(e.getSource() == b5){
+            f1.dispose();
+            new SRD();
+        }
+        if(e.getSource() == b6){
+            f1.dispose();
+            new DD();
+        }
+        if(e.getSource() == b7){
+            f1.dispose();
+            new TD();
+        }
+        if(e.getSource() == b8){
+           // f1.dispose();
+            new Waveform();
+        }
     }
 }

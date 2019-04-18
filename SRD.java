@@ -28,7 +28,7 @@ public class SRD implements ActionListener {
         b3.setBackground(Color.WHITE);
         b3.setForeground(Color.BLACK);
 
-        ImageIcon i1 = new ImageIcon("D:\\oop_Project\\A.PNG");
+        ImageIcon i1 = new ImageIcon("D:\\JAVA_Project\\SRdescription.PNG");
         l1 = new JLabel(i1);
 
         b1.addActionListener(this);
@@ -40,6 +40,7 @@ public class SRD implements ActionListener {
         f1.add(b2);
         f1.add(b3);
         f1.add(l1);
+
         f1.setSize(1500,1500);
         f1.setVisible(true);
         f1.setLayout(null);

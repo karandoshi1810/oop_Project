@@ -10,11 +10,10 @@ public class TD implements ActionListener {
     JButton b1,b2,b3;
     JLabel l1;
     public TD(){
-        JFrame f1 = new JFrame("T flip-flop description");
-        JButton b1 =new JButton("Previous");
-        JButton b2 = new JButton("Next");
-        JButton b3 =new JButton("Exit");
-
+         f1 = new JFrame("T flip-flop description");
+         b1 =new JButton("Previous");
+         b2 = new JButton("Next");
+         b3 =new JButton("Exit");
         b1.setBounds(280,630,100,65);
         b1.setBackground(new Color(51,51,255));
         b1.setForeground(Color.WHITE);
@@ -52,7 +51,7 @@ public class TD implements ActionListener {
         }
         if(e.getSource() == b2){
             f1.dispose();
-
+            new JKFlipflop();
         }
         if(e.getSource()==b3){
             f1.dispose();

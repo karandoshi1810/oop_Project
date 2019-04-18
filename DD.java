@@ -15,16 +15,16 @@ public class DD implements ActionListener {
         b2 = new JButton("Next");
         b3 = new JButton("Exit");
 
-        b1.setBounds(420,700,100,65);
+        b1.setBounds(310,620,100,65);
         b1.setBackground(Color.WHITE);
         b1.setForeground(Color.BLACK);
-        b2.setBounds(700,701,100,67);
+        b2.setBounds(650,620,100,67);
         b2.setBackground(Color.WHITE);
         b2.setForeground(Color.BLACK);
-        b3.setBounds(1000,701,100,65);
+        b3.setBounds(970,620,100,65);
         b3.setBackground(Color.WHITE);
         b3.setForeground(Color.BLACK);
-        ImageIcon kd = new ImageIcon("D:\\oop_Project\\Dflipflop_description.PNG");
+        ImageIcon kd = new ImageIcon("D:\\JAVA_Project\\D_flipflop_description.PNG");
         l1 = new JLabel(kd);
 
         b1.addActionListener(this);
@@ -41,7 +41,7 @@ public class DD implements ActionListener {
         f1.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
 
-}
+    }
 
     public static void main(String[] args) {
         new DD();
@@ -54,7 +54,7 @@ public class DD implements ActionListener {
         }
         else if(e.getSource() == b2){
             f1.dispose();
-            new DFlipFlop();
+            new DFlipflop();
         }
         else if(e.getSource() == b3){
             f1.dispose();

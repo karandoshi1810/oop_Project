@@ -29,7 +29,7 @@ public class JKD implements ActionListener {
         b2.addActionListener(this);
         b3.addActionListener(this);
 
-        ImageIcon kd = new ImageIcon("D:\\oop_Project\\JKdescription.PNG");
+        ImageIcon kd = new ImageIcon("D:\\JAVA_Project\\JKdescription.PNG");
         l1 = new JLabel(kd);
         f1.add(b1);
         f1.add(b2);
@@ -54,7 +54,7 @@ public class JKD implements ActionListener {
         }
         else if(e.getSource() == b2){
             f1.dispose();
-
+             new JKFlipflop();
         }
         else if(e.getSource() == b3){
             f1.dispose();
