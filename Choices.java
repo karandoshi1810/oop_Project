@@ -93,6 +93,14 @@ public class Choices implements ActionListener {
             f1.dispose();
             new DD();
         }
+        if (e.getSource() == b3) {
+            f1.dispose();
+            new JKD();
+        }
+        if (e.getSource() == b4) {
+            f1.dispose();
+            new TD();
+        }
         if (e.getSource() == b5) {
             f1.dispose();
             new MainFrame();

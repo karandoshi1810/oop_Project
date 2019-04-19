@@ -31,6 +31,7 @@ public class SRFlipflop implements ActionListener {
         b5 = new JButton("JK flip-flop");
         b6 = new JButton("T flip-flop");
         b7 = new JButton("Waveform");
+        b9 = new JButton("Truth table");
         l1 = new JLabel("SR Flip-Flop");
 
         l5 = new JLabel("Q");
@@ -44,13 +45,23 @@ public class SRFlipflop implements ActionListener {
         t5.setBounds(920,250,150,50);
         t6.setBounds(500,400,300,50);
         b1.setBounds(300,580,100,50);
+        b1.setBackground(Color.PINK);
         b2.setBounds(500,580,100,50);
+        b2.setBackground(Color.PINK);
         b3.setBounds(700,580,100,50);
+        b3.setBackground(Color.PINK);
         b8.setBounds(900,580,100,50);
+        b8.setBackground(Color.PINK);
         b4.setBounds(1200,150,150,50);
+        b4.setBackground(Color.PINK);
         b5.setBounds(1200,250,150,50);
+        b5.setBackground(Color.PINK);
         b6.setBounds(1200,350,150,50);
+        b6.setBackground(Color.PINK);
         b7.setBounds(1200,450,150,50);
+        b7.setBackground(Color.PINK);
+        b9.setBounds(1200,550,150,50);
+        b9.setBackground(Color.PINK);
         l1.setBounds(625,-90,200,250);
         l5.setBounds(910,270,20,20);
         l7.setBounds(907,430,20,20);
@@ -66,7 +77,7 @@ public class SRFlipflop implements ActionListener {
         b6.addActionListener(this);
         b7.addActionListener(this);
         b8.addActionListener(this);
-
+        b9.addActionListener(this);
 
         f1.getContentPane().setBackground(Color.WHITE);
         l1.setForeground(Color.BLACK);
@@ -88,6 +99,7 @@ public class SRFlipflop implements ActionListener {
         f1.add(b5);
         f1.add(b6);
         f1.add(b7);
+        f1.add(b9);
         f1.add(t1);
         f1.add(t2);
         f1.add(t3);
@@ -164,6 +176,10 @@ public class SRFlipflop implements ActionListener {
        else if(e.getSource() == b8){
             f1.dispose();
             new ThanksFrame();
+        }
+        else if(e.getSource() == b9){
+            //f1.dispose();
+            new TruthTable();
         }
 
     }

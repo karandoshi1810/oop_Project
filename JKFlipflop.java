@@ -7,7 +7,7 @@ import java.awt.event.ActionListener;
 
 public class JKFlipflop implements ActionListener {
     JFrame f1;
-    JButton b1,b2,b3,b4,b5,b6,b7,b8;
+    JButton b1,b2,b3,b4,b5,b6,b7,b8,b9;
     JLabel l1,l2,l3,l4,l5,l6;
     JTextField t1,t2,t3,t4,t5;
     public JKFlipflop(){
@@ -30,6 +30,7 @@ public class JKFlipflop implements ActionListener {
          b6 = new JButton("D flip-flop");
          b7 = new JButton("T flip-flop");
          b8 = new JButton("Waveform");
+         b9 = new JButton("Truth table");
 
         t1.setBounds(325,170,60,60);
         t2.setBounds(325,440,60,60);
@@ -57,6 +58,8 @@ public class JKFlipflop implements ActionListener {
         b7.setBackground(Color.PINK);
         b8.setBounds(1200,450,100,50);
         b8.setBackground(Color.PINK);
+        b9.setBounds(1200,550,100,50);
+        b9.setBackground(Color.PINK);
         ImageIcon i1 = new ImageIcon("D:\\JAVA_Project\\JK_image.PNG");
         l6 = new JLabel(i1);
 
@@ -68,6 +71,7 @@ public class JKFlipflop implements ActionListener {
         b6.addActionListener(this);
         b7.addActionListener(this);
         b8.addActionListener(this);
+        b9.addActionListener(this);
 
         f1.add(t1);
         f1.add(t2);
@@ -82,6 +86,7 @@ public class JKFlipflop implements ActionListener {
         f1.add(b6);
         f1.add(b7);
         f1.add(b8);
+        f1.add(b9);
         f1.add(l1);
         f1.add(l2);
         f1.add(l3);
@@ -156,6 +161,10 @@ public class JKFlipflop implements ActionListener {
         if(e.getSource() == b8){
            // f1.dispose();
             new Waveform();
+        }
+        if(e.getSource() == b9){
+            // f1.dispose();
+            new TruthTable();
         }
     }
 }

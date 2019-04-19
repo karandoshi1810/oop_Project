@@ -14,12 +14,12 @@ public class TruthTable implements ActionListener {
         b1 = new JButton("Back");
         b2 = new JButton("Exit");
 
-        b1.setBounds(285,600,100,50);
+        b1.setBounds(285,630,100,70);
         b1.setBackground(new Color(255,153,51));
-        b2.setBounds(985,600,100,50);
+        b2.setBounds(985,630,100,70);
         b2.setBackground(new Color(255,153,51));
 
-        ImageIcon i1 = new ImageIcon("D:\\JAVA_Project\\Waveforms.PNG");
+        ImageIcon i1 = new ImageIcon("D:\\JAVA_Project\\Truth_Table.PNG");
         l1 = new JLabel(i1);
 
         b1.addActionListener(this);
@@ -36,7 +36,7 @@ public class TruthTable implements ActionListener {
     }
 
     public static void main(String[] args) {
-        new Waveform();
+        new TruthTable();
     }
     @Override
     public void actionPerformed(ActionEvent e) {

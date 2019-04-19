@@ -8,7 +8,7 @@ import java.awt.event.ActionListener;
 public class DFlipflop implements ActionListener {
     JFrame f1;
     JLabel l1,l6;
-    JButton b1, b2, b3,b4,b5,b6,b7,b8;
+    JButton b1, b2, b3,b4,b5,b6,b7,b8,b9;
     JTextField t1, t2, t3, t4;
 
     public DFlipflop() {
@@ -27,6 +27,7 @@ public class DFlipflop implements ActionListener {
         b4 = new JButton("JK flip-flop");
         b5 = new JButton("T flip-flop");
         b8 = new JButton("SR flip-flop");
+        b9 = new JButton("Truth table");
         l1 = new JLabel("D flip-flop");
 
         t1.setBounds(360, 270, 50, 20);
@@ -34,13 +35,25 @@ public class DFlipflop implements ActionListener {
         t3.setBounds(935, 280, 150, 50);
         t4.setBounds(360, 340, 50, 20);
         b1.setBounds(300, 500, 100, 50);
+        b1.setBackground(Color.PINK);
         b2.setBounds(500, 500, 100, 50);
+        b2.setBackground(Color.PINK);
         b3.setBounds(700, 500, 100, 50);
+        b3.setBackground(Color.PINK);
         b4.setBounds(1200,150,150,50);
+        b4.setBackground(Color.PINK);
         b5.setBounds(1200,250,150,50);
-        b6.setBounds(1200,350,150,50);
-        b5.setBounds(1200,450,150,50);
+        b5.setBackground(Color.PINK);
+        b6.setBounds(1200,250,150,50);
+        b6.setBackground(Color.PINK);
+        b5.setBounds(1200,350,150,50);
+        b5.setBackground(Color.PINK);
         b7.setBounds(900,500,100,50);
+        b7.setBackground(Color.PINK);
+        b9.setBounds(1200,450,150,50);
+        b9.setBackground(Color.PINK);
+        b8.setBounds(1200,550,150,50);
+        b8.setBackground(Color.PINK);
         l1.setBounds(25,-90,200,250);
         ImageIcon i1 = new ImageIcon("D:\\JAVA_Project\\D_image.PNG");
         l6 = new JLabel(i1);
@@ -53,6 +66,7 @@ public class DFlipflop implements ActionListener {
         b6.addActionListener(this);
         b7.addActionListener(this);
         b8.addActionListener(this);
+        b9.addActionListener(this);
 
 
         f1.add(b1);
@@ -63,6 +77,7 @@ public class DFlipflop implements ActionListener {
         f1.add(b6);
         f1.add(b7);
         f1.add(b8);
+        f1.add(b9);
         f1.add(t1);
         f1.add(t2);
         f1.add(t3);
@@ -132,6 +147,10 @@ public class DFlipflop implements ActionListener {
         if(e.getSource() == b8){
             f1.dispose();
             new SRFlipflop();
+        }
+        if(e.getSource() == b9){
+            //f1.dispose();
+            new TruthTable();
         }
     }
 

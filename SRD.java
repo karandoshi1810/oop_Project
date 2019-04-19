@@ -17,17 +17,12 @@ public class SRD implements ActionListener {
         b3 = new JButton("Exit");
 
 
-        b1.setBounds(400,540,100,65);
-        b2.setBounds(600,540,100,65);
-        b3.setBounds(800,540,100,65);
-
-        b1.setBackground(Color.WHITE);
-        b1.setForeground(Color.BLACK);
-        b2.setBackground(Color.WHITE);
-        b2.setForeground(Color.BLACK);
-        b3.setBackground(Color.WHITE);
-        b3.setForeground(Color.BLACK);
-
+        b1.setBounds(210,560,100,65);
+        b1.setBackground(Color.PINK);
+        b2.setBounds(630,560,100,65);
+        b2.setBackground(Color.PINK);
+        b3.setBounds(1060,560,100,65);
+        b3.setBackground(Color.PINK);
         ImageIcon i1 = new ImageIcon("D:\\JAVA_Project\\SRdescription.PNG");
         l1 = new JLabel(i1);
 

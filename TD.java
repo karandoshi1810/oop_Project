@@ -51,7 +51,7 @@ public class TD implements ActionListener {
         }
         if(e.getSource() == b2){
             f1.dispose();
-            new JKFlipflop();
+            new TFlipflop();
         }
         if(e.getSource()==b3){
             f1.dispose();
